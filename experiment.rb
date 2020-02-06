@@ -19,6 +19,16 @@ $k=YAML::load(File.open('gui_ofgmail.yml'))
 		@browser.text_field(:type => s).set "#{arg1}"
     puts j
 	end
+When (/^I enter password as \"([^\"]*)\"$/) do |arg1|
+		s=$k[:Controls][:pwd][:type]
+		@browser.text_field(:type => s).set "#{arg1}"
+    puts j
+	end
+When (/^I enter password as \"([^\"]*)\"$/) do |arg1|
+		s=$k[:Controls][:pwd][:type]
+		@browser.text_field(:type => s).set "#{arg1}"
+    puts j
+	end
 	Then (/^I click on next button$/) do
 		@browser.element(:class => $k[:Controls][:nextbtn2][:class]).click()
 		sleep 10
