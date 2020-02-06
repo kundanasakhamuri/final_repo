@@ -25,25 +25,23 @@ $k=YAML::load(File.open('gui_ofgmail.yml'))
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
 	end
-  	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
 	end
-  	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
-		s=$k[:Controls][:email][:id]
-		@browser.text_field(:id => s).set "#{arg1}"
-	end	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
-		s=$k[:Controls][:email][:id]
-		@browser.text_field(:id => s).set "#{arg1}"
-	end	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
 	end
-  	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
 	end
-  	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+		s=$k[:Controls][:email][:id]
+		@browser.text_field(:id => s).set "#{arg1}"
+	end
+When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
 	end
@@ -51,10 +49,24 @@ $k=YAML::load(File.open('gui_ofgmail.yml'))
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
 	end
+
   	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
-	end	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+	end
+  	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+		s=$k[:Controls][:email][:id]
+		@browser.text_field(:id => s).set "#{arg1}"
+	end
+  	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+		s=$k[:Controls][:email][:id]
+		@browser.text_field(:id => s).set "#{arg1}"
+	end
+  	When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
+		s=$k[:Controls][:email][:id]
+		@browser.text_field(:id => s).set "#{arg1}"
+	end	
+      When (/^I enter emaill as \"([^\"]*)\"$/) do |arg1|
 		s=$k[:Controls][:email][:id]
 		@browser.text_field(:id => s).set "#{arg1}"
 	end
@@ -68,8 +80,8 @@ $k=YAML::load(File.open('gui_ofgmail.yml'))
 	end
 	And (/^I shoud see the button as more options$/) do
 		puts "#{@browser.element(:id => ':2t').present?}"
-	end
-	And (/^I shoud see the a button as refresh$/) do
+	end,
+	And (/^I shoud see the a button as refresh$/) do |args|
 		puts "#{@browser.div(:class => $k[:Controls][:refresh][:class]).present?}"
 	end
 	And (/^I shoud see a link with tittle name as Inbox$/) do  
@@ -87,4 +99,32 @@ $k=YAML::load(File.open('gui_ofgmail.yml'))
 	And (/^I should see Google apps button besides$/) do
 		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
     end
+	And (/^I should see Google apps button besides$/) do
+		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
+    end
 	
+		And (/^I should see Google apps button besides$/) do
+		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
+    end
+	
+	And (/^I should see Google apps button besides$/) do
+		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
+    end
+	
+	And (/^I should see Google apps button besides$/) do
+		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
+    end
+	
+	And (/^I should see Google apps button besides$/) do
+		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
+    end
+	
+	And (/^I should see Google apps button besides$/) do
+		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
+    end
+	
+		And (/^I should see Google apps button besides$/) do
+		puts "#{@browser.element(:id => $k[:Controls][:googleapps][:id]).present?}"
+    end
+	
+
