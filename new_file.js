@@ -7,6 +7,7 @@ var name = "John";
 		if(1==1)
 		{
 			console.log("test");
+			console.log("test");
 		}
 
 	  	console.log("The name is : " +name);
